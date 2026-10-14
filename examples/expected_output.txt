@@ -1,0 +1,9 @@
+Personal Agentic Workbench — synthetic offline demo
+Collector fixture: Cedar Orbit Labs / Data Product Associate
+Input: 12; parsed: 9; duplicate: 1; review: 1; malformed: 1
+Human-approved, synced, read-back verified: 3
+Daily Brief (2026-12-19)
+- 4 high-priority suggestions
+- 2 deadlines within 7 days
+- 1 review-needed items
+- pipeline health: 3 read-back-verified syncs

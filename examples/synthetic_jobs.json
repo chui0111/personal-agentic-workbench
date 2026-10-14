@@ -1,0 +1,14 @@
+[
+  {"company":"Cedar Orbit Labs","title":"Data Product Associate","city":"Sample City","source_url":"https://example.com/jobs/cedar-data-product?utm_source=demo","description":"Analyze fictional product metrics and explain findings.","deadline":"2026-12-20"},
+  {"company":"Marble Lantern Studio","title":"AI Product Coordinator","city":"Demo Bay","source_url":"https://example.com/jobs/marble-ai-product","description":"Coordinate fictional AI feature reviews and user feedback.","deadline":"2026-12-21"},
+  {"company":"Willow Circuit Works","title":"Operations Analyst","city":"Sample City","source_url":"https://example.com/jobs/willow-ops","description":"Investigate synthetic operations metrics and prepare reports."},
+  {"company":"Amber Kestrel Co","title":"Solutions Associate","city":"Demo Bay","source_url":"https://example.com/jobs/amber-solutions","description":"Translate sample customer needs into solution notes."},
+  {"company":"Blue Finch Collective","title":"Community Operations","city":"Test Harbor","source_url":"https://example.com/jobs/blue-community","description":"Moderate a fictional community and review engagement signals."},
+  {"company":"Silver Pine Systems","title":"Business Data Analyst","city":"Test Harbor","source_url":"https://example.com/jobs/silver-analysis","description":"Explain synthetic business trends using tables."},
+  {"company":"Coral Compass Labs","title":"Product Research Assistant","city":"Sample City","source_url":"https://example.com/jobs/coral-research","description":"Summarize fictional user interviews for a product team."},
+  {"company":"Violet Harbor Works","title":"Project Coordinator","city":"Demo Bay","source_url":"https://example.com/jobs/violet-project","description":"Track sample project milestones and communicate issues."},
+  {"company":"Golden Elm Studio","title":"Growth Operations","city":"Test Harbor","source_url":"https://example.com/jobs/golden-growth","description":"Review fictional acquisition funnels and propose experiments."},
+  {"company":"Maple Signal Group","title":"Unclear Generalist","city":"","source_url":"https://example.com/jobs/maple-unclear","description":"Responsibilities to be confirmed.","ambiguous":true},
+  {"company":"Cedar Orbit Labs","title":"Data Product Associate","city":"Sample City","source_url":"https://EXAMPLE.com/jobs/cedar-data-product/#duplicate","description":"Duplicate URL variant."},
+  {"company":"Broken Fixture Co","title":"Missing URL","city":"Sample City","description":"Malformed fixture has no source URL."}
+]
