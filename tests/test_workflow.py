@@ -5,7 +5,7 @@ import pytest
 
 from personal_agentic_workbench import (LocalMockSink, Pipeline, atomic_json,
                                         canonical_url, load_json, stable_id, validate_job)
-from personal_agentic_workbench.collector import extract_fixture_html
+from personal_agentic_workbench.collector import extract_fixture_html, extract_with_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 JOBS = json.loads((ROOT / "examples" / "synthetic_jobs.json").read_text(encoding="utf-8"))
@@ -85,6 +85,18 @@ def test_synthetic_html_extraction():
     html = (ROOT / "examples" / "synthetic_page.html").read_text(encoding="utf-8")
     job = extract_fixture_html(html)
     assert job["title"] == "Data Product Associate"
+    assert job["source_url"] == "https://example.com/jobs/cedar-data-product"
+
+
+def test_optional_playwright_synthetic_fixture():
+    pytest.importorskip("playwright.sync_api")
+    try:
+        job = extract_with_playwright(ROOT / "examples" / "synthetic_page.html")
+    except Exception as exc:
+        if "Executable doesn't exist" in str(exc):
+            pytest.skip("Optional Playwright browser binary is not installed")
+        raise
+    assert job["company"] == "Cedar Orbit Labs"
     assert job["source_url"] == "https://example.com/jobs/cedar-data-product"
 
 

@@ -1,7 +1,8 @@
-"""Public-safe reconstruction: six recoverable fields from a synthetic page.
+"""Public-safe reconstruction: six illustrative fields from a synthetic page.
 
-The original cross-device crawler source and its exact 14-field schema are not
-present here. This module is not represented as the original crawler.
+The original host-mediated extractor is not part of this Python module. Its
+recovered excerpt validates 14 fields, but the exact field-name list is absent.
+This module is not represented as the historical extractor.
 """
 
 from __future__ import annotations

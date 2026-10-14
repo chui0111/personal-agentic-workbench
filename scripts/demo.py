@@ -30,7 +30,12 @@ def main() -> None:
               f"duplicate: {sum(r['state'] == 'DUPLICATE' for r in results)}; "
               f"review: {sum(r['state'] == 'NEEDS_REVIEW' for r in results)}; "
               f"malformed: {sum(r['state'] == 'FAILED' for r in results)}")
+        example = pipeline.state["records"][approved[0]]
+        print(f"Analysis suggestion: {example['analysis']['role_family']} / "
+              f"{example['analysis']['priority_suggestion']} (human review required)")
         print(f"Human-approved, synced, read-back verified: {len(approved)}")
+        print(f"Final state: {sum(e['state'] == 'SYNCED' for e in pipeline.state['records'].values())} SYNCED; "
+              f"{sum(e['state'] == 'NEEDS_REVIEW' for e in pipeline.state['records'].values())} NEEDS_REVIEW")
         print(build_brief(pipeline.state["records"], today=date(2026, 12, 19)), end="")
 
 
